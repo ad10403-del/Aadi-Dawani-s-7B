@@ -1,28 +1,86 @@
  /* Change the background of the entire visible page */
+ table {
+    width: 100%; /* --- General Body Styles --- */
 body {
-    background-color: #f0f0f0; /* Very light grey */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
-
-/* Style for all paragraphs */
-body {
-    background-color: #f0f0f0; /* Very light grey */
+/* --- Header --- */
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
-
-/* Style for all paragraphs */
-p {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    font-family: 'Times New Roman', serif;
+header h1 {
+    color: #1a73e8;
 }
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+/* --- Images / Figure --- */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+figure img {
+    width: 70%;                         /* bigger image */
+    max-width: 800px;                    /* prevent it from getting too huge */
+    height: auto;                        /* keeps proportions correct */
+    border-radius: 10px;                 /* rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* subtle shadow */
+    border: 2px solid #1a73e8;           /* border to make it pop */
+}
+/* --- Section Headings --- */
+section h2 {
+    color: #1a73e8;
+    margin-top: 30px;
+}
+/* --- Lists --- */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/* --- Table --- */
 
-/* Style for the main heading */
-h1 {
-    text-align: center; /* Puts the heading in the middle */
-    border: 3px solid orange; /* Adds an orange border around the heading */
-    padding: 10px; /* Adds space inside the border */
-img {
-
- width:500px;
- height:500px;
-
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #333;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #1a73e8;
+    color: #fff;
+}
+/* --- Fun Facts / Details --- */
+details {
+    background-color: #e0f2ff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+/* --- Highlight --- */
+mark {
+    background-color: #fffa65;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #555;
 }
